@@ -2,7 +2,7 @@
 
 if [ $# -eq 0 ]
 then
-  echo "Nope"
+  echo "Usage: $0 <SERVICE_NAME>"
   exit 1
 fi
 
@@ -15,4 +15,3 @@ case "$(pidof ${SERVICE} | wc -w)" in
   1) 
     ;;
 esac
-echo $API_KEY
